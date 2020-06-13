@@ -3,16 +3,13 @@ const gender = "F";
 const age = 48;
 const contribution = 23;
 
-if (gender == "F") {
-    if (age + contribution > 85) {
-        console.log(`${name} you can retire`);
-    } else {
-        console.log(`${name} you can not retire`);
-    }
+const contributionCalc = age + contribution;
+
+const manCanRetire = gender == 'M' && contribution >= 35 && contributionCalc >= 95;
+const womanCanRetire = gender == 'F' && contribution >= 30 && contributionCalc >= 85;
+
+if (manCanRetire || womanCanRetire) {
+    console.log(`${name} you can retire`);
 } else {
-    if (age + contribution > 95) {
-        console.log(`${name} you can retire`);
-    } else {
-        console.log(`${name} you can not retire`);
-    }
+    console.log(`${name} you can not retire`);
 }
