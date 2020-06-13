@@ -9,7 +9,7 @@ const manCanRetire = gender == 'M' && contribution >= 35 && contributionCalc >= 
 const womanCanRetire = gender == 'F' && contribution >= 30 && contributionCalc >= 85;
 
 if (manCanRetire || womanCanRetire) {
-    console.log(`${name} you can retire`);
+    console.log(`${name} you can retire.`);
 } else {
-    console.log(`${name} you can not retire`);
+    console.log(`${name} you can not retire.`);
 }
