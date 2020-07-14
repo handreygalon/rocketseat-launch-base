@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Handrey Emanuel Galon</title>
-        <link rel="icon" href="challenges/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="style.css">
-    </head>
+{% extends "layout.html" %}
 
-    <body>
-        <header>
-            <div class="links">
-                <a href="index.html">About</a>
-                <a href="classes.html">Classes</a>
-            </div>            
-        </header> 
-        
+{% block head %}
+
+    <title>Portfolio - Handrey Emanuel Galon</title>
+
+    <link rel="icon" href="challenges/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+{% endblock %}
+
+{% block content %}
+
         <div id="wrapper">
             <h1>Classes</h1>
         </div>
@@ -124,5 +120,5 @@
         </div>
 
         <script src="scripts.js"></script>
-    </body>
-</html>
+
+{% endblock %}
