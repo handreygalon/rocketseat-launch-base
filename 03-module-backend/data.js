@@ -3,13 +3,15 @@ module.exports = [
         id: "EhnXaybirdA",
         title: "Criando um projeto do zero para seu portfólio",
         duration: "44:39",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "0mYq5LrQN1s",
         title: "TypeScript, o início, de forma prática",
         duration: "01:10:24",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "GOB-lawExXc",
