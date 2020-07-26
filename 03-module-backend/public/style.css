@@ -162,7 +162,7 @@ iframe {
 }
 
 /* --- Featured --- */
-.card-image-container {
+.featured-wrapper.card-image-container {
     position: relative;
 }
 .featured {
