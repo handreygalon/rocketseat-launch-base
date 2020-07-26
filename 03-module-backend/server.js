@@ -9,11 +9,24 @@ server.use(express.static('public'))
 server.set("view engine", "njk")
 
 nunjuncks.configure("views", {
-    express: server
+    express: server,
+    autoescape: false
 })
 
 server.get("/", function(req, res) {
-    return res.render("about")
+    const about = {
+        avatar: "https://avatars1.githubusercontent.com/u/19215767?s=460&u=160c2ec1907118fa09342f84a814fcf7e8c91828&v=4",
+        name: "Handrey Emanuel Galon",
+        role: "Student - Rocketseat",
+        description: '<a href="https://rocketseat.com.br" target="_blank">Rocketseat</a> launchbase bootcamp student aiming to fit into the market as a full-stack developer.',
+        links: [
+            { name: "Github", url: "https://github.com/handreygalon" },
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/handrey-emanuel-galon" },
+            { name: "Facebook", url: "https://www.facebook.com/handrey.emanuel/" }
+        ] 
+    }
+
+    return res.render("about", { about })
 })
 
 server.get("/portfolio", function(req, res) {
