@@ -2,6 +2,7 @@ const express = require('express')
 const nunjuncks = require('nunjucks')
 
 const server = express()
+const videos = require("./data")
 
 server.use(express.static('public'))
 
