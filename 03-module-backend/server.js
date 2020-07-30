@@ -47,6 +47,20 @@ server.get("/video", function(req, res) {
     return res.render("video", { item: video })
 })
 
+/*server.get("/video/:id", function(req, res) {
+    const id = req.params.id;
+    //return res.send(`O id fornecido na rota é: ${id}`);
+    const video = videos.find(function(video) {
+        return video.id == id.split('=')[1]
+    })
+
+    if (!video) {
+        return res.send("Video not found!")
+    }
+    
+    return res.render("video", { item: video })
+})*/
+
 server.use(function(req, res) {
     res.status(404).render("not-found");
 });
